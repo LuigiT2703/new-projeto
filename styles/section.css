@@ -1,0 +1,20 @@
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 80px;
+  width: 100%;
+  
+}
+.skills-container img{
+ 
+  width: auto !important;
+  height: 42 !important;
+  border-radius: 0 !important;
+  object-fit: contain !important;
+  
+}
+
+
