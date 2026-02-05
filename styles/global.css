@@ -1,166 +1,73 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
+
 :root {
     --red: #e3646e;
     --purple: #BB72E9;
-    --blue:#3996DB; 
-    --green:#82BC4F;
-    --yellow:#EABD5F;
-    --gray-100:#E2E4E9;
-    --gray-200:#C0C4CE;
-    --gray-300:#878EA1;
-    --gray-400:#292C34;
-    --gray-500:#16181D;
-    --gray-600:#0D0E11;
-
-    --font-title: 'Asap', sans-serif;
-    --h1: 700 56px/120% var(--font-title);
-    --h2: 700 24px/120% var(--font-title);
-    --h3: 700 16px/120% var(--font-title);
-
-    --font-subtitle: 'Inconsolata', monospace;
-    --subtitle: 400 20px/120% var(--font-subtitle);
-
-    
-    --font-body: 'Maven Pro', sans-serif;
-    
-    --text-md: 400 16px/140% var(--font-body);
-    --text-sm: 400 14px/140% var(--font-body);
+    --blue: #3996DB;
+    --green: #82BC4F;
+    --yellow: #EABD5F;
+    --gray-100: #0D0E11;
+    --gray-200: #16181D;
+    --gray-300: #292C34;
+    --gray-400: #878EA1;
+    --gray-500: #C0C4CE;
+    --gray-600: #F2F2F2;
 }
 
-body{
-    font-family: var(--font-body);
-    background-image: url(assets/Background_Intro.png) ;
-    width: 100%;
-    min-height: 100vh;
+body {
+    background-color:var(--gray-100);
+    color: var(--gray-600);
+    font-family: 'Maven Pro', sans-serif;
+    background-image: url(assets/Background_Intro.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
     background-size: cover;
-
 }
 
-a{
-    text-decoration:none;
-    color: inherit;
-}
-.profile-pic {
-    width: 96px;
-    height: 96px;
-    border-radius: 50%;
-    object-fit: cover;  
-}
-
-.container{
-max-width: 1366px;
-width: 100%;
-min-height: 750px;
-margin: 0 auto;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding-bottom: 80px;
-}
-
-
-
-
-.grid{
-   display: flex; 
-   flex-direction: column;
- text-align: center;
-  gap: 16px;
-   
-}
-
-h1{
-    font:var(--h1);
-    color: var(--gray-400);
-    margin-top: 8px;
-}
-h2{
-    font: var(--subtitle);
-    color:var(--red);
-    margin-top: 24px;
-}
-p{
-    font: var(--text-md);
-    color: var(--gray-500);
-    display: block;
-}
-
-.description{
-    font: var(--text-md);
-    color: #C0C4CE;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
     display: flex;
     flex-direction: column;
-}
-.project-call{
-    margin-top: 70px;
-}
-.project-call p{
-    color: var(--red);
-    font-family: 'Incosolata', monospace;
+    align-items: center;
+    text-align: center;
 }
 
-.project-call h3{
-    margin-top: 8px;
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid var(--red);
+    padding: 4px;
+    object-fit: cover;
+    margin-bottom: 24px;
+}
+
+.subtitle {
+    font-family: 'Inconsolata', monospace;
+    color: var(--gray-500);
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.subtitle span { color: var(--red); }
+
+.title {
+    font-size: 56px;
     font-family: 'Asap', sans-serif;
-    color: #C0C4CE;
-}
-.projects-grid{
-    display: grid;
-   grid-template-columns: (3,1fr);
-    gap: 24px;
-    margin-top: 56px;
-    padding-bottom: 80px;
-    justify-content: center;
-
+    margin-bottom: 20px;
 }
 
-.project-card{
-    background-color: #161616;
-    padding: 12px;
-    border-radius: 12px;
-    width: 330px;
-
-}
-.project-card:hover{
-    border-color: var(--red);
-    
+.description {
+    max-width: 700px;
+    color: var(--gray-400);
+    line-height: 1.6;
+    margin-bottom: 32px;
 }
 
-.project-card img{
-    width: 100%;
-    height: 156px;
-    border-radius: 8px;
-    object-fit: cover;
-
-}
-.project-info h4{
-   color: #e1e1e6;
-   margin-top: 16px;
-   font-family: 'Asap', sans-serif;
-}
-.project-info p{
-    color: #C4C4CC;
-    font-size: 14px;
-    margin: 8px;
-}
-.projects-grid img{
-    width: 300px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-   
-}
-.project-grid img:hover{
-    transform: scale(1.05);
-    border-color: #E3646E !important;
-    cursor: pointer;
-}
-
+.arrow-down { margin-top: 40px; }

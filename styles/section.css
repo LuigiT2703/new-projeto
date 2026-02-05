@@ -1,20 +1,63 @@
+/* Container das tags/skills */
 .skills-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  margin-top: 80px;
-  width: 100%;
-  
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
 }
-.skills-container img{
- 
-  width: auto !important;
-  height: 42 !important;
-  border-radius: 0 !important;
-  object-fit: contain !important;
-  
+
+.skills-container img {
+    height: 32px;
+    width: auto;
+}
+
+/* Seção de Projetos */
+.project-call p {
+    color: var(--red);
+    font-family: 'Inconsolata', monospace;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.projects-grid {
+    display: flex; /* MUDANÇA: Flex em vez de Grid para ser mais fácil */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 56px;
+}
+
+.project-card {
+    background-color: var(--gray-200);
+    width: 330px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.project-card:hover {
+    border-color: var(--red);
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 156px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.project-info h4 {
+    color: var(--gray-600);
+    margin: 16px 0 8px;
+    font-size: 18px;
+}
+
+.project-info p {
+    color: var(--gray-400);
+    font-size: 14px;
 }
 
 
