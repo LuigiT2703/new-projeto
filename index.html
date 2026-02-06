@@ -13,8 +13,16 @@
     <link rel="stylesheet" href="styles/section.css">
 </head>
 <body>
+    <nav class="navbar">
+    <div class="nav-content">
+        <a href="#home">Início</a>
+        <a href="#projects">Trabalho</a>
+        <a href="#services">Serviços</a>
+        <a href="#contact">Contato</a>
+    </div>
+</nav>
 
-    <header class="container">
+    <header id="home" class="container">
         <div class="grid">
             <img class="profile-pic" src="styles/assets/euluigi.jpg" alt="Luigi">
             
@@ -70,7 +78,72 @@
                     </div>
                 </div>
             </div>
-        </section>
+            </section>
+            <section class="container">
+            <div class="project-call">
+            <p>Meus serviços</p>
+            <h3>Como posso ajudar no seu negócio</h3>
+            </div>
+            </section>
+        <section class="services container">
+        <div class="services-grid">
+            <div class=service-card><img src="styles/assets/Devices.png" alt="">
+                <h4>Websites e aplicativos</h4>
+                <p>Desenvolvimentos de interface</p>
+            </div>
+            
+            <div class="service-card"><img src="styles/assets/HardDrives.png" alt="">
+                <h4>Api e banco de dados</h4>
+                <p>Criação de serviços do sistema </p>
+            </div>
+            <div class="service-card"><img src="styles/assets/Infinity.png" alt="">
+            <h4>DevOps</h4>
+            <p>Gestão e infraestrutura da aplicação</p>
+            </div>
+
+        </div>
+</section>
+<section class="contact container">
+    <div class="contact-header">
+        <p>Contato</p>
+        <h3>Gostou do meu trabalho?</h3>
+        <span>Entre em contato ou acompanhe as minhas redes sociais!</span>
+    </div>
+
+    <div class="contact-links">
+        <a href="#" class="contact-btn">
+            <div class="btn-content">
+                <img src="styles/assets/LinkedinLogo.png" alt="Linkedin">
+                <span>Linkedin</span>
+            </div>
+            <img src="styles/assets/ArrowUpRight (1).png" class="arrow-icon" alt="Link">
+        </a>
+
+        <a href="#" class="contact-btn">
+            <div class="btn-content">
+                <img src="styles/assets/InstagramLogo.png" alt="Instagram">
+                <span>Instagram</span>
+            </div>
+            <img src="styles/assets/ArrowUpRight (1).png" class="arrow-icon" alt="Link">
+        </a>
+
+        <a href="#" class="contact-btn">
+            <div class="btn-content">
+                <img src="styles/assets/GithubLogo.png" alt="Github">
+                <span>GitHub</span>
+            </div>
+            <img src="styles/assets/ArrowUpRight (1).png" class="arrow-icon" alt="Link">
+        </a>
+
+        <a href="#" class="contact-btn">
+            <div class="btn-content">
+                <img src="styles/assets/EnvelopeSimple.png" alt="E-mail">
+                <span>E-mail</span>
+            </div>
+            <img src="styles/assets/ArrowUpRight (1).png" class="arrow-icon" alt="Link">
+        </a>
+    </div>
+</section>
     </main>
 
 </body>
